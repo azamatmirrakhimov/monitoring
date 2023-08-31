@@ -86,6 +86,6 @@ sudo systemctl start alertmanager
 sudo systemctl status prometheus
 ~~~
 ~~~
-sudo systemctl status alermanager
+sudo systemctl status alertmanager
 ~~~
 
