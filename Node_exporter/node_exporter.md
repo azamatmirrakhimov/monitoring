@@ -47,7 +47,7 @@ WantedBy=multi-user.target
 sudo systemctl daemon-reload
 ~~~
 ~~~
-sudo systemctls enable node_exporter
+sudo systemctl enable node_exporter
 ~~~
 ~~~
 sudo systemctl start node_exporter
