@@ -5,7 +5,7 @@ sudo useradd --no-create-home --shell /bin/false alertmanager
 ~~~
 ## Создаем раздел для хранение системных файлов
 ~~~
-mkdit /etc/alermanager
+mkdir /etc/alermanager
 ~~~
 ## Скачиваем файлы с официального сайта `https://prometheus.io/download/#alertmanager`
 ~~~
