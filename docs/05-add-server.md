@@ -68,3 +68,12 @@ global:
 ~~~
 docker-compose -f docker-compose-node.yml up -d
 ~~~
+## После этого нужно перейти на сервер мониторинга и настроить `prometheus.yml`
+~~~
+- job_name: 'mikrotik'
+    static_configs:
+      - targets: ["ip_address_remote_server:9100"]
+  - job_name: 'mikrotik-containers'
+    static_configs:
+      - targets: ["ip_address_remote_server:8081"]
+~~~
