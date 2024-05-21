@@ -54,6 +54,10 @@ WantedBy=multi-user.target
 ~~~
 ##
 ~~~
+systemctl daemon-reload
+~~~
+##
+~~~
 systemctl enable node_exporter.service
 ~~~
 ##
