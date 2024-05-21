@@ -2,6 +2,7 @@
 
 ## В данном репозитории мы будем расматривать установку и настройки `Grafana`,
 ## `Prometheus`, `Node_Exporter` и `Alertmanager`
+## Так же мы будем настраивать на двух серверах `grafana` и `server-1`
 * [Установка Grafana](docs/01-grafana-install.md)
 * [Установка Prometheus](docs/02-prometheus-install.md)
 * [Установка Alertmanager](docs/03-alert-manager-install.md)
