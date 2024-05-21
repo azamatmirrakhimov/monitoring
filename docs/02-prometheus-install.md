@@ -84,5 +84,23 @@ ExecStart=/usr/local/bin/prometheus \
 [Install]
 WantedBy=multi-user.target
 ~~~
-
-
+## Добавить в автозапуск
+~~~
+systemctl enable prometheus.service
+~~~
+## Ставртуем сервис 
+~~~
+systemctl start prometheus.service
+~~~
+## Проверяем статус
+~~~
+systemctl status prometheus.service
+~~~
+## Проверяем запустилось ли приложение на порту `9090`
+~~~
+netstat -tunlp
+~~~
+## Проверка логов
+~~~
+journalctl -u prometheus.service
+~~~
