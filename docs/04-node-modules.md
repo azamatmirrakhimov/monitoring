@@ -30,7 +30,7 @@ NOTICE
 ~~~
 mv node_exporter /usr/local/bin/
 ~~~
-## Передаем прова пользователю ``
+## Передаем прова пользователю `node_exporter`
 ~~~
 chown node_exporter:node_exporter /usr/local/bin/node_exporter 
 ~~~
