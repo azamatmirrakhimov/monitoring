@@ -77,3 +77,7 @@ docker-compose -f docker-compose-node.yml up -d
     static_configs:
       - targets: ["ip_address_remote_server:8081"]
 ~~~
+## Перезапустить сервис так же на сервере `grafana`
+~~~
+systemctl restart prometheus.service 
+~~~
