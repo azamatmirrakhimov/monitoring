@@ -97,3 +97,35 @@ scrape_configs:
     static_configs:
       - targets: ["localhost:9090"]
 ~~~
+## После ведение данных изменений нужно перезапустить `daemon`
+~~~
+systemctl daemon-reload
+~~~
+## Перезапустить `prometheus`
+~~~
+systemctl restart prometheus
+~~~
+## Дабавить в ватозапуск `alertmanager.service`
+~~~
+systemctl enable alertmanager.service
+~~~
+## Запустить сервис `alertmanager.service`
+~~~
+systemctl start alertmanager.service
+~~~
+## Проверить статус `prometheus`
+~~~
+systemctl status prometheus
+~~~
+## Проверить статус `alertmanager.service`
+~~~
+systemctl status alertmanager.service
+~~~
+## Проверить статус `9093`
+~~~
+netstat -tunlp
+~~~
+## Проверить журнал логов `alermanager.service`
+~~~
+journalctl -u alermanager.service
+~~~
