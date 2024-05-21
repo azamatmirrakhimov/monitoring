@@ -39,6 +39,29 @@ chown node_exporter:node_exporter /usr/local/bin/node_exporter
 vi /etc/systemd/system/node_exporter.service
 ~~~
 ~~~
+[Unit]
+Description=Node_Exporter
+After=network.target
 
+[Service]
+User=node_exporter
+Group=node_exporter
+Type=simple
+ExecStart=/usr/local/bin/node_exporter
+
+[Install]
+WantedBy=multi-user.target
 ~~~
+##
 ~~~
+systemctl enable node_exporter.service
+~~~
+##
+~~~
+start node_exporter.service
+~~~
+##
+~~~
+status node_exporter.service
+~~~
+
