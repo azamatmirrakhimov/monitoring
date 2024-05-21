@@ -29,3 +29,4 @@ systemctl status grafana-server
 ~~~
 netstat -tunlp
 ~~~
+* [Установка `Prometheus`](02-prometheus-install.md) 
