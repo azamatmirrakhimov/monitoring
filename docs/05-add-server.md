@@ -65,3 +65,6 @@ global:
      static_configs:
        - targets: ['local_private_ip:8081']
 ~~~
+~~~
+docker-compose -f docker-compose-node.yml up -d
+~~~
