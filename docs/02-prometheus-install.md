@@ -33,6 +33,14 @@ ls -ll
 ~~~
 Output
 ~~~
+total 229792
+drwxr-xr-x 2 prometheus 127      4096 May  2 14:42 console_libraries
+drwxr-xr-x 2 prometheus 127      4096 May  2 14:42 consoles
+-rw-r--r-- 1 prometheus 127     11357 May  2 14:42 LICENSE
+-rw-r--r-- 1 prometheus 127      3773 May  2 14:42 NOTICE
+-rwxr-xr-x 1 prometheus 127 121066245 May  2 14:00 prometheus
+-rw-r--r-- 1 prometheus 127       934 May  2 14:42 prometheus.yml
+-rwxr-xr-x 1 prometheus 127 114206977 May  2 14:01 promtool
 ~~~
 ## Далее с помощю команды `mv` перенести файлы в нужные директории
 ~~~
