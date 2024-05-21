@@ -46,5 +46,20 @@ drwxr-xr-x 2 prometheus 127      4096 May  2 14:42 consoles
 ~~~
 sudo mv console* /etc/prometheus/
 ~~~
+~~~
+sudo mv prometheus.yml /etc/prometheus/
+~~~
+~~~
+sudo chown -R prometheus:prometheus /etc/prometheus/
+~~~
+~~~
+sudo mv prometheus /usr/local/bin/
+~~~
+~~~
+sudo mv promtool /usr/local/bin/
+~~~
+~~~
+sudo chown prometheus:prometheus /usr/local/bin/prom*
+~~~
 
 
