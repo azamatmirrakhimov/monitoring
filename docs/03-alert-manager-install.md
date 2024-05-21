@@ -129,3 +129,4 @@ netstat -tunlp
 ~~~
 journalctl -u alermanager.service
 ~~~
+[Настройка node_modeles](04-node-modules.md)
