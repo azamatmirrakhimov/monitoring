@@ -18,16 +18,13 @@ sudo dpkg -i grafana-enterprise_11.0.0_amd64.deb
 systemctl daemon-reload
 ~~~
 ~~~
-systemctl enable grafana
+systemctl enable grafana-server
 ~~~
 ~~~
-systemctl enable grafana
+systemctl start grafana-server
 ~~~
 ~~~
-systemctl start grafana
-~~~
-~~~
-systemctl status grafana
+systemctl status grafana-server
 ~~~
 ~~~
 netstat -tunlp
