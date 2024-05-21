@@ -110,3 +110,4 @@ systemctl start node_exporter.service
 systemctl status node_exporter.service
 ~~~
 
+[Дабавление серверов](05-add-server.md) 
