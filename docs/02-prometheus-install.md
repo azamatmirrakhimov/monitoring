@@ -24,3 +24,19 @@ wget https://github.com/prometheus/prometheus/releases/download/v2.45.5/promethe
 ~~~
 tar -xvf /tmp/<file-name.tar.gz> -C /tmp/
 ~~~
+## Далее нам надо перейти в директорию 
+~~~
+cd /tmp/
+~~~
+~~~
+ls -ll
+~~~
+Output
+~~~
+~~~
+## Далее с помощю команды `mv` перенести файлы в нужные директории
+~~~
+sudo mv console* /etc/prometheus/
+~~~
+
+
