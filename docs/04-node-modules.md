@@ -52,20 +52,23 @@ ExecStart=/usr/local/bin/node_exporter
 [Install]
 WantedBy=multi-user.target
 ~~~
-##
+## Внесем коректировки в наш файл  
+~~~
+~~~
+## Перезапускаем `` для того что бы изменение в !! прменились
 ~~~
 systemctl daemon-reload
 ~~~
-##
+## Добавим в автозапуск сервис
 ~~~
 systemctl enable node_exporter.service
 ~~~
-##
+## Стартуем сервис
 ~~~
-start node_exporter.service
+systemctl start node_exporter.service
 ~~~
-##
+## Проверяем статус 
 ~~~
-status node_exporter.service
+systemctl status node_exporter.service
 ~~~
 
