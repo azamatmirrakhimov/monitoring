@@ -102,5 +102,6 @@ netstat -tunlp
 ~~~
 ## Проверка логов
 ~~~
+[Установка AlertManager](03-alert-manager-install.md)
 journalctl -u prometheus.service
 ~~~
